@@ -23,7 +23,7 @@ public class Main {
         double resultb = (55 + 9) % 9;
         System.out.println("Rezultatul este " + resultb);
 
-        int resultc = 20 + ((-3 * 5) / 8);
+        double resultc = 20 + (-3 * 5) / 8d;
         System.out.println("Rezultatul este " + resultc);
 
         double resultd = 5 + 15d / 3 * 2 - 8 % 3;
