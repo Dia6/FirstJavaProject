@@ -14,7 +14,6 @@ public class Main {
         double Result4 = Result1 + Result2;
         System.out.println("Rezultatul este " + Result4);
 
-
     }
     public static int multiply(int first, int second){
         int multiply = first * second;
