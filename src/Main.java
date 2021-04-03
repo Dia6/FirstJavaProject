@@ -42,6 +42,56 @@ public class Main {
         double Result4 = Result4(5, 15d, 3, 2, 8, 3);
         System.out.println("Rezultatul " + Result4);
 
+        System.out.println("Rezultatele pentru Tema 2");
+
+        System.out.println("Rezultatul este " + adunare(3, 6));
+        System.out.println("Rezultatul este " + scadere(3, 6));
+        System.out.println("Rezultatul este " + inmultire(3, 6));
+        System.out.println("Rezultatul este " + impartire(3, 6));
+
+        System.out.println("Rezultatele pentru Tema 3");
+
+        System.out.println("    J    a  v     v  a");
+        System.out.println("    J   a a  v   v  a a");
+        System.out.println("J   J  aaaaa  v v  aaaaa");
+        System.out.println(" J J  a     a  v  a     a");
+
+        System.out.println("Rezultatele pentru Tema 4");
+
+        double mediaAritmetica = sum(2, 3, 4) / 3d;
+        System.out.println(mediaAritmetica);
+
+        System.out.println("Rezultatele pentru Tema 5");
+
+        System.out.println(" +" + "\"\"\"\"\"" + "+ ");
+        System.out.println("[| o o |]");
+        System.out.println(" |  ^  | ");
+        System.out.println(" | '-' | ");
+        System.out.println(" +-----+ ");
+
+
+    }
+    public static int sum(int nr1, int nr2, int nr3){
+        int sum = nr1 + nr2 + nr3;
+        return sum;
+
+    }
+
+    public static int adunare(int nr1, int nr2){
+        int adunare = nr1 + nr2;
+        return adunare;
+    }
+    public static int scadere(int nr1, int nr2){
+        int scadere = nr1 - nr2;
+        return scadere;
+    }
+    public static int inmultire(int nr1, int nr2){
+        int inmultire = nr1 * nr2;
+        return inmultire;
+    }
+    public static double impartire(double nr1, double nr2){
+        double impartire = nr1 / nr2;
+        return impartire;
     }
     public static double Result4(double first, double second, double third, double forth, double fifth, double sixth){
         double Result4 = first + second / third * forth - fifth % sixth;
