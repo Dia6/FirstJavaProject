@@ -14,7 +14,22 @@ public class Main {
         double Result4 = Result1 + Result2;
         System.out.println("Rezultatul este " + Result4);
 
+        int Result5 = sum(7,4);
+        System.out.println("Rezultatul este " + Result5);
+
+        printName();
+
     }
+
+    public static void printName() {
+        System.out.println("Hello, Diana");
+    }
+
+    public static int sum(int first, int second){
+        int sum = first + second;
+        return sum;
+    }
+
     public static int multiply(int first, int second){
         int multiply = first * second;
         return multiply;
