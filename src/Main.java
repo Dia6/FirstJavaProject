@@ -84,23 +84,12 @@ public class Main {
         System.out.println("Rezultatele pentru Tema 8");
         System.out.println("1 Inch reprezinta " + inchToMeter(120) + " metri");
 
-        Scrieti o metoda java, care primeste distanta (in metrii) si timpul (ca si 3 numere: ore, minute, secunde),
-        si afiseaza viteza, in metrii pe secunda, kilometrii pe ora si mile pe ora. (Indiciu: 1 mila = 1609 metrii);
-
-        public static float speed(){
-            float speedInMeters = distance(1000) / time(2,0, 0);
-            float speedInKm = distance(1000)/1000 / time(2, 0, 0);
-            float speedInMiles = distance(1000); / hour;
-
-        }
-
 
     }
     public static void distance(float meters){
     }
-    public static void mile(){
-        float mile = 1 public static void time
-    }(float hour, float minutes, float seconds){
+
+    public static void time(float hour, float minutes, float seconds){
     }
     public static float inchToMeter(float nr){
         float inchToMeter = nr * 0.0254f;
