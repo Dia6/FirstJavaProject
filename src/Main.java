@@ -1,4 +1,5 @@
 import java.time.chrono.MinguoChronology;
+import java.util.EmptyStackException;
 
 public class Main {
 
@@ -73,7 +74,7 @@ public class Main {
 
         System.out.println("Rezultatele pentru Tema 6");
 
-        System.out.println("Rezultatul este " + rest(15f,4f));
+        System.out.println("Rezultatul este " + rest(15f, 4f));
 
 
         System.out.println("Rezultatele pentru Tema 7");
@@ -84,74 +85,96 @@ public class Main {
         System.out.println("Rezultatele pentru Tema 8");
         System.out.println("1 Inch reprezinta " + inchToMeter(120) + " metri");
 
+        System.out.println("Rezultatele pentru Tema 9");
+
+        float distanta = 125000f;
+        float hr = 2f;
+        float min = 15f;
+        float sec = 45f;
+        float timpHr = hr + (min / 60f) + (sec / 3600f);
+
+        System.out.println("Distanta in metri este " + distanta);
+        System.out.println(hr + " Ore " + min + " minute " + sec + " secunde ");
+
+        float mps = distanta / (timpHr * 3600f);
+        float kmh = (distanta / 1000f) / timpHr;
+        float mph = (distanta / 1609f) / timpHr;
+
+        System.out.println("Viteza in metri pe secunda este: " + mps);
+        System.out.println("Viteza in kilometri pe ora este: " + kmh);
+        System.out.println("Viteza in mile pe ora este: " + mph);
 
     }
-    public static void distance(float meters){
-    }
 
-    public static void time(float hour, float minutes, float seconds){
-    }
-    public static float inchToMeter(float nr){
+    public static float inchToMeter(float nr) {
         float inchToMeter = nr * 0.0254f;
         return inchToMeter;
     }
-    public static float tempC(float F){
+
+    public static float tempC(float F) {
         float tempC = 5f / 9f * (F - 32f);
         return tempC;
     }
 
-    public static float rest(float nr1, float nr2){
+    public static float rest(float nr1, float nr2) {
         float rest = nr1 % nr2;
         return rest;
 
     }
 
-    public static int sum(int nr1, int nr2, int nr3){
+    public static int sum(int nr1, int nr2, int nr3) {
         int sum = nr1 + nr2 + nr3;
         return sum;
 
     }
 
-    public static int adunare(int nr1, int nr2){
+    public static int adunare(int nr1, int nr2) {
         int adunare = nr1 + nr2;
         return adunare;
     }
-    public static int scadere(int nr1, int nr2){
+
+    public static int scadere(int nr1, int nr2) {
         int scadere = nr1 - nr2;
         return scadere;
     }
-    public static int inmultire(int nr1, int nr2){
+
+    public static int inmultire(int nr1, int nr2) {
         int inmultire = nr1 * nr2;
         return inmultire;
     }
-    public static double impartire(double nr1, double nr2){
+
+    public static double impartire(double nr1, double nr2) {
         double impartire = nr1 / nr2;
         return impartire;
     }
-    public static double Result4(double first, double second, double third, double forth, double fifth, double sixth){
+
+    public static double Result4(double first, double second, double third, double forth, double fifth, double sixth) {
         double Result4 = first + second / third * forth - fifth % sixth;
         return Result4;
     }
-    public static double Result3(double first, double second, double third, double forth){
+
+    public static double Result3(double first, double second, double third, double forth) {
         double Result3 = first + (second * third) / forth;
         return Result3;
     }
-    public static double Result2(double first, double second, double third){
+
+    public static double Result2(double first, double second, double third) {
         double Result2 = (first + second) % third;
         return Result2;
     }
 
 
-    public static int Result1(int first, int second, int third){
+    public static int Result1(int first, int second, int third) {
         int Result1 = first + second * third;
         return Result1;
 
     }
 
 
-    public static void printName(){
+    public static void printName() {
         System.out.println("Hello, Diana!");
     }
-
-
 }
+
+
+
