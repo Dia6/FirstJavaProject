@@ -1,5 +1,4 @@
 package Lab2.AnimalRescue;
 
-public class Dog {
-
+public class VetDr {
 }
