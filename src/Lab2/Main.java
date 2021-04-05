@@ -47,8 +47,8 @@ public class Main {
 
         System.out.println("Rezultatele pentru Tema 4");
 
-        double mediaAritmetica = sum(2, 3, 4) / 3d;
-        System.out.println(mediaAritmetica);
+        average(3, 2, 4);
+        System.out.println("Media aritmetica a nr. 3, 2 si 4 este ");
 
         System.out.println("Rezultatele pentru Tema 5");
 
@@ -84,6 +84,10 @@ public class Main {
         System.out.println("Viteza in kilometri pe ora este: " + kmh);
         System.out.println("Viteza in mile pe ora este: " + mph);
 
+    }
+    public static double average(int no1, int no2, int no3){
+        double average = (no1 + no2 + no3) / 3d;
+        return average;
     }
     public static void printRobot() {
         System.out.println(" +\"\"\"\"\"+\n" +
