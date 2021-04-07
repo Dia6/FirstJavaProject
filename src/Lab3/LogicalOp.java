@@ -2,12 +2,26 @@ package Lab3;
 
 public class LogicalOp {
 
+    public void isHighestNumber(int no1, int no2, int no3) {
+        if (no1 >= no2 && no1 >= no3) {
+            System.out.println("The highest number is " + no1);
+        } else if (no2 >= no1 && no2 >= no3) {
+            System.out.println("The highest number is " + no2);
+        } else if (no3 >= no1 && no3 >= no2) {
+            System.out.println("The highest number is " + no3);
+        } else {
+            System.out.println("Hopa");
+        }
+    }
 
-    //Creati o metoda care sa se numeasca isNumberEven. Metoda trebuie sa primeasca ca parametru un numar, si sa returneze adevarat sau fals.
-    // Daca numarul e par sa returneze true iar daca e impar sa returnese false.
-    // Apelati metoda in main() pentru a verifica daca functioneaza.
-
-    public void isNumberEven(int number) {
+    public void isEligibleToVote(int number) {
+        if (number >= 18) {
+            System.out.println("True");
+        } else {
+            System.out.println("False");
+        }
+    }
+    public void isEvenNumber(int number) {
         if ((number % 2) == 0) {
             System.out.println("True");
         } else if ((number % 2) != 0 ) {
@@ -51,7 +65,7 @@ public class LogicalOp {
     }
 
     public String checkNumber(int number) {
-        if ( number >= 3 && number != 4) {
+        if ( number > 3 && number != 4) {
             return ("The number is greater than 3 and not equal to 4");
         } else if (number == 4) {
             return ("The number is equal to 4");
@@ -62,7 +76,7 @@ public class LogicalOp {
     }
 
     public String checkSnow(int number) {
-        if (number >= 8 || number == 6){
+        if (number > 8 || number == 6){
             return ("The amount of snow this winter was(cm):" + number);
         } else {
             return ("The forecast snow is(cm) " + number);

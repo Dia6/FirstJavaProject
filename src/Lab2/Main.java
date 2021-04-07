@@ -37,11 +37,9 @@ public class Main {
         printTJava();
 
         System.out.println("Rezultatele pentru Tema 4");
-
         System.out.println("Media aritmetica a nr. 3, 2 si 4 este " + calc.average(3, 2, 4));
 
         System.out.println("Rezultatele pentru Tema 5");
-
         printRobot();
 
         System.out.println("Rezultatele pentru Tema 6");
@@ -74,8 +72,6 @@ public class Main {
         System.out.println("Viteza in kilometri pe ora este: " + kmh);
         System.out.println("Viteza in mile pe ora este: " + mph);
 
-        LogicalOp op = new LogicalOp();
-        System.out.println("The higher number is " + op.checkHigherNumber(6,9));
 
 
     }

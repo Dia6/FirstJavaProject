@@ -23,14 +23,17 @@ public class Animal {
     }
 
     public void setFavFood(String favFood) {
+
         this.favFood = favFood;
     }
 
     public int getHealthLevel() {
+
         return healthLevel;
     }
 
     public void setHealthLevel(int healthLevel) {
+
         this.healthLevel = healthLevel;
     }
 
