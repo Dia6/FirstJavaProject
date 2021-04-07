@@ -1,3 +1,5 @@
+package Lab3;
+
 public class Calculator {
 
     public int sum;
