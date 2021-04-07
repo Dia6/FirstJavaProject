@@ -31,8 +31,22 @@ public class Main {
 
         System.out.println("Exercitiul 9");
 
-        op.isNumberEven(6);
+        op.isEvenNumber(6);
+        op.isEvenNumber(17);
 
+        System.out.println("Exercitiul 10");
+
+        op.isEligibleToVote(23);
+        op.isEligibleToVote(16);
+        op.isEligibleToVote(18);
+
+        System.out.println("Exercitiul 11");
+
+        op.isHighestNumber(3,7,20);
+        op.isHighestNumber(3,3,7);
+        op.isHighestNumber(3,7,7);
+        op.isHighestNumber(21,21,21);
+        op.isHighestNumber(21,24,25);
     }
 
 }
