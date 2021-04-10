@@ -2,7 +2,6 @@ package Lab3;
 
 public class Calculator {
 
-
     public float average(int no1, int no2, int no3) {
         float average = (no1 + no2 + no3) / 3f;
         return average;

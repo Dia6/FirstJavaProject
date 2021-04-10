@@ -1,10 +1,8 @@
 import Lab3.Calculator;
-import Lab3.LogicalOp;
 
 public class Main {
 
     public static void main(String[] args) {
-        // write your code here
         System.out.println("Hello");
         System.out.println("Diana");
 
@@ -29,21 +27,21 @@ public class Main {
         double resultd = 5 + 15d / 3 * 2 - 8 % 3;
         System.out.println("Rezultatul este " + resultd);
 
-        Calculator calculator = new Calculator();
+        Calculator calc = new Calculator();
 
-        int Rezultat1 = calculator.multiply(7, 4);
+        int Rezultat1 = calc.multiply(7, 4);
         System.out.println("Rezultatul este " + Rezultat1);
 
-        float Rezultat2 = calculator.divide(7.0f, 4.0f);
+        float Rezultat2 = calc.divide(7.0f, 4.0f);
         System.out.println("Rezultatul este " + Rezultat2);
 
-        float Rezultat3 = calculator.modulo(7f, 4f);
+        float Rezultat3 = calc.modulo(7f, 4f);
         System.out.println("Rezultatul este " + Rezultat3);
 
         float Rezultat4 = Rezultat1 + Rezultat2;
         System.out.println("Rezultatul este " + Rezultat4);
 
-        int Rezultat5 = calculator.sum(7, 4);
+        int Rezultat5 = calc.sum(7, 4);
         System.out.println("Rezultatul este " + Rezultat5);
 
     }

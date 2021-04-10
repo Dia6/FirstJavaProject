@@ -2,12 +2,11 @@ package Lab3;
 
 public class Main {
     public static void main(String[] args) {
-
         System.out.println("Exercitiul 3");
 
         LogicalOp op = new LogicalOp();
-        op.checkHigherNumber(6,9);
-        System.out.println("Cel mai mare numar este " + op.checkHigherNumber(6,9));
+        op.checkHigherNumber(6, 9);
+        System.out.println("Cel mai mare numar este " + op.checkHigherNumber(6, 9));
 
         System.out.println("Exercitiul 4");
 
@@ -42,11 +41,11 @@ public class Main {
 
         System.out.println("Exercitiul 11");
 
-        op.isHighestNumber(3,7,20);
-        op.isHighestNumber(3,3,7);
-        op.isHighestNumber(3,7,7);
-        op.isHighestNumber(21,21,21);
-        op.isHighestNumber(21,24,25);
-    }
+        op.isHighestNumber(3, 7, 20);
+        op.isHighestNumber(3, 3, 7);
+        op.isHighestNumber(3, 7, 7);
+        op.isHighestNumber(21, 21, 21);
+        op.isHighestNumber(21, 24, 25);
 
+    }
 }
