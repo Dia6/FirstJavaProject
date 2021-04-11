@@ -1,6 +1,12 @@
 package Lab3;
 
 public class Calculator {
+    //4. Creati o metoda in clasa LogicalOp, care sa primeste doi parametrii de tip numar.
+    // etoda trebuie sa verifice care dintre cele doua numere este mai mare,
+    // si sa execute o numaratoare crescatoare de la cel mai mic la cel mai mare.
+    // (ex: daca int x e primul parametru iar int y  este cel de-al doilea, daca x  este mai mare decat y,
+    // atunci numaratoarea sa fie de la y la x).
+
 
     public float average(int no1, int no2, int no3) {
         float average = (no1 + no2 + no3) / 3f;
