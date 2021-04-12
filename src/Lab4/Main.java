@@ -59,26 +59,15 @@ public class Main {
         System.out.println("Tema While Loops - Exercitiul 6");
         op.countOddWhile(1);
 
-        //7. Creati o metoda care sa adune toate numerele din intervalul 111 si 8899.
-        // Sa se afiseze suma totala, iar dupa aceea sa se calculeze si afiseze media numerelor din acel interval.
-        // Introduceti o variabila int count in metoda, pentru a numara toate numerele din interval.
-        // Apelati metoda in clasa Main, metoda main() pentru a verifica daca functioneaza.
 
         System.out.println("Tema While Loops - Exercitiul 7");
         op.countAverageWhile(111, 8899);
 
-        //8. Creati o metoda care sa primeasca doi parametrii de tip numar,
-        // si sa returneze media numerelor divizibile cu 7, din acel interval.
-        // Apelati metoda in clasa Main, metoda main() pentru a verifica daca functioneaza.
-
         System.out.println("Tema While Loops - Exercitiul 8");
         op.average7d(3, 43);
 
-
-        //9. Creati o metoda care sa afiseze primele 20 de numere din sirul lui Fibonacci.
-
         System.out.println("Tema While Loops - Exercitiul 9");
-
+        //9. Creati o metoda care sa afiseze primele 20 de numere din sirul lui Fibonacci.
 
 
         System.out.println("Tema While Loops - Exercitiul 10");

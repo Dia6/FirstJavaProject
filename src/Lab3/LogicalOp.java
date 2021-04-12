@@ -2,10 +2,10 @@ package Lab3;
 
 public class LogicalOp {
 
-    public void CozaLozaWoza(int no1,int no2){
+    public void CozaLozaWoza(int no1, int no2){
         int i = no1;
         int count = 0;
-        for (i = no1; i <= no2; i++) {
+        for (i = no1; i <= 110; i++) {
             if (i % 3 == 0) {
                 System.out.println("Coza");
             } else if (i % 5 == 0) {
@@ -26,7 +26,6 @@ public class LogicalOp {
         }
         System.out.println("Total numere" + count);
     }
-
     public void average7d(int no1, int no2){
         int i = no1;
         int sum = 0;
