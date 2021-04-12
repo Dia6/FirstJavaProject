@@ -2,6 +2,30 @@ package Lab3;
 
 public class LogicalOp {
 
+    public void CozaLozaWoza(int no1,int no2){
+        int i = no1;
+        int count = 0;
+        for (i = no1; i <= no2; i++) {
+            if (i % 3 == 0) {
+                System.out.println("Coza");
+            } else if (i % 5 == 0) {
+                System.out.println("Loza");
+            } else if (i % 7 == 0) {
+                System.out.println("Woza");
+            } else if (i % 3 == 0 && i % 5 == 0) {
+                System.out.println("CozaLoza");
+            } else if (i % 3 == 0 && i % 7 == 0) {
+                System.out.println("CozaWoza");
+            } else if (i % 5 == 0 && i % 7 == 0) {
+                System.out.println("WozaLoza");
+            } else if (i % 3 == 0 && i % 5 == 0 && i % 7 == 0) {
+                System.out.println("CozaLozaWoza");
+            } else
+                System.out.println(i);
+            count++;
+        }
+        System.out.println("Total numere" + count);
+    }
     public void average7d(int no1, int no2){
         int i = no1;
         int sum = 0;

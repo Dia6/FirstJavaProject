@@ -79,35 +79,8 @@ public class Main {
 
         System.out.println("Tema While Loops - Exercitiul 9");
 
-        //10. Creati o metoda numita CozaLozaWoza.
-        //11 numere pe linie
-
-        //- se va afisa CozaLozaWoza pentru multiplu de 3 SI 5 SI 7
+        op.CozaLozaWoza(1, 110);
 
 
-        int no1 = 1;
-        int no2 = 110;
-        int i = no1;
-        int count = 0;
-        for (i = no1; i <= 110; i++) {
-            if (i % 3 == 0) {
-                System.out.println("Coza");
-            } else if (i % 5 == 0) {
-                System.out.println("Loza");
-            } else if (i % 7 == 0) {
-                System.out.println("Woza");
-            } else if (i % 3 == 0 && i % 5 == 0) {
-                System.out.println("CozaLoza");
-            } else if (i % 3 == 0 && i % 7 == 0) {
-                System.out.println("CozaWoza");
-            } else if (i % 5 == 0 && i % 7 == 0) {
-                System.out.println("WozaLoza");
-            } else if (i % 3 == 0 && i % 5 == 0 && i % 7 == 0) {
-                System.out.println("CozaLozaWoza");
-            } else
-                System.out.println(i);
-            count++;
-        }
-        System.out.println("Total numere" + count);
     }
 }
