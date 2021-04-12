@@ -1,78 +1,76 @@
 package Lab2.AnimalRescue;
 
 public class Animal {
-    private String type = "Dog";
+
     private String breed = "French Bulldog";
     private String name = "Masha";
-    private float ageInYears = 4.4f;
-    private int healthLevel = 10;
-    private int hungerLevel = 4;
-    private String favFood = "Salmon";
-    private String favActivity = "Chewing toys";
+    private String color = "White and black";
+    private float age = 4.4f;
+    private int health = 9;
+    private int hunger = 8;
+    private String favFood = "avocado";
+    private String favActivity = "chewing plastic toys";
 
+    public String getColor() {
+        return color;
+    }
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String speak(){
+        System.out.println("Bark");
+    }
+    public void eat(){
+        System.out.println("Chew");
+    }
+    public void sleep(){
+        System.out.println("Zzzz");
+    }
     public String getFavActivity() {
         return favActivity;
     }
-
     public void setFavActivity(String favActivity) {
         this.favActivity = favActivity;
     }
-
     public String getFavFood() {
         return favFood;
     }
-
     public void setFavFood(String favFood) {
 
         this.favFood = favFood;
     }
+    public int getHealth() {
 
-    public int getHealthLevel() {
-
-        return healthLevel;
+        return health;
     }
+    public void setHealth(int healthLevel) {
 
-    public void setHealthLevel(int healthLevel) {
-
-        this.healthLevel = healthLevel;
+        this.health = health;
     }
-
-    public float getAgeInYears() {
-        return ageInYears;
+    public float getAge() {
+        return age;
     }
-
-    public void setAgeInYears(float ageInYears) {
-        this.ageInYears = ageInYears;
+    public void setAge(float ageInYears) {
+        this.age = ageInYears;
     }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String getType) {
-        this.type = getType;
-    }
-
     public String getBreed() {
         return breed;
     }
-
     public void setBreed(String breed) {
         this.breed = breed;
     }
-
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
 
     }
-    public int getHungerLevel() {
-        return hungerLevel;
+    public int getHunger() {
+        return hunger;
     }
-    public void setHungerLevel(int hungerLevel){
-        this.hungerLevel = hungerLevel;
+    public void setHunger(int hunger){
+        this.hunger = hunger;
     }
 }
