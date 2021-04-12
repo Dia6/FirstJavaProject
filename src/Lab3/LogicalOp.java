@@ -2,32 +2,34 @@ package Lab3;
 
 public class LogicalOp {
 
-    public void CozaLozaWoza(int no1, int no2) {
+    public void CozaLozaWoza(int no1,int no2){
         int i = no1;
-        while (i <= no2) {
+        int count = 0;
+        for (i = no1; i <= no2; i++) {
             if (i % 3 == 0) {
-                System.out.print("Coza");
-            } else if (i % 7 == 0) {
-                System.out.print("Woza");
+                System.out.println("Coza");
             } else if (i % 5 == 0) {
-                System.out.print("Loza");
-            } else if (i % 3 == 0 && i % 7 == 0) {
-                System.out.print("CozaWoza");
+                System.out.println("Loza");
+            } else if (i % 7 == 0) {
+                System.out.println("Woza");
             } else if (i % 3 == 0 && i % 5 == 0) {
-                System.out.print("CozaLoza");
+                System.out.println("CozaLoza");
+            } else if (i % 3 == 0 && i % 7 == 0) {
+                System.out.println("CozaWoza");
             } else if (i % 5 == 0 && i % 7 == 0) {
-                System.out.print("WozaLoza");
+                System.out.println("WozaLoza");
             } else if (i % 3 == 0 && i % 5 == 0 && i % 7 == 0) {
-                System.out.print("CozaLozaWoza");
-            } else {
-                System.out.print(i + "");
-            }
-            if (i % 11 == 0) {
-                System.out.println();
-            }
-            i++;
+                System.out.println("CozaLozaWoza");
+            } else
+                System.out.println(i);
+            count++;
         }
+        System.out.println("Total numere" + count);
     }
+<<<<<<<<< Temporary merge branch 1
+=========
+
+>>>>>>>>> Temporary merge branch 2
     public void average7d(int no1, int no2){
         int i = no1;
         int sum = 0;
@@ -121,11 +123,13 @@ public class LogicalOp {
         float average = sum / count;
         System.out.println(average);
     }
-    public void countIntervalNumbers(int no1, int no2) {
+    public int countIntervalNumbers(int no1, int no2) {
         int sum = 0;
         for (int i = no1; i <= no2; i++) {
             sum += i;
         }
+        return sum;
+
     }
     public void showOddNumbers(int number){
         for (int i = 1; i <= number; i++) {
