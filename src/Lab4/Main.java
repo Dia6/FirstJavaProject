@@ -81,27 +81,33 @@ public class Main {
 
         //10. Creati o metoda numita CozaLozaWoza.
         //11 numere pe linie
-        //- se va afisa Coza pentru numerele care sunt multiplu de 3 (1 2 Coza 4)
-        //- se va afisa Loza pentru numerele care sunt multiplu de 5 (2 3 4 Loza 6)
-        //- se va afisa Woza pentru numerele care sunt multiplu de 7 (4 5 6 Woza 8)
-        //- se va afisa CozaLoza pentru numerele care sunt multiplu de 3 SI 5
-        //- se va afisa CozaWoza pentru multiplu de 3 SI 7
-        //- se va afisa WozaLoza pentru multiplu de 5 SI 7
+
         //- se va afisa CozaLozaWoza pentru multiplu de 3 SI 5 SI 7
 
 
         int no1 = 1;
         int no2 = 110;
         int i = no1;
-        for (i = 0; i <= 110; i++) {
+        int count = 0;
+        for (i = no1; i <= 110; i++) {
             if (i % 3 == 0) {
                 System.out.println("Coza");
             } else if (i % 5 == 0) {
                 System.out.println("Loza");
-            } else if (i % 3 == 0) {
+            } else if (i % 7 == 0) {
                 System.out.println("Woza");
+            } else if (i % 3 == 0 && i % 5 == 0) {
+                System.out.println("CozaLoza");
+            } else if (i % 3 == 0 && i % 7 == 0) {
+                System.out.println("CozaWoza");
+            } else if (i % 5 == 0 && i % 7 == 0) {
+                System.out.println("WozaLoza");
+            } else if (i % 3 == 0 && i % 5 == 0 && i % 7 == 0) {
+                System.out.println("CozaLozaWoza");
             } else
                 System.out.println(i);
+            count++;
         }
+        System.out.println("Total numere" + count);
     }
 }
