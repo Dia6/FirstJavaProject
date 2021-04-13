@@ -1,8 +1,8 @@
 package Lab2.AnimalRescue;
 
 public class VetDr {
-    private String drName = "Radu";
-    private String drSpecialty = "surgery";
+    private String drName;
+    private String drSpecialty;
 
     public String getDrName() {
         return drName;

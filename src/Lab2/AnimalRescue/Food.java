@@ -1,11 +1,11 @@
 package Lab2.AnimalRescue;
 
 public class Food {
-    private String name = "Petkult";
-    private String type = "grains";
-    private float priceInLei = 25;
-    private float quantityInKg = 0.25f;
-    private float availableQtyInKg = 175f;
+    private String name;
+    private String type;
+    private float priceInLei;
+    private float quantityInKg;
+    private float availableQtyInKg;
 
     public float getAvailableQtyInKg() {
         return availableQtyInKg;

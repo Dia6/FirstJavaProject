@@ -3,7 +3,7 @@ package Lab2.AnimalRescue;
 public class Activity {
 
 
-    private String name = "Chew on plastic toys";
+    private String name;
 
 
     public String getName(){

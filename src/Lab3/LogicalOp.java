@@ -34,9 +34,9 @@ public class LogicalOp {
         int count = 0;
         while(i <=no2) {
             i++;
-            while (i%7==0){
-                i++;
+            if (i%7==0){
                 sum += i;
+                i++;
                 count++;
             }
         }System.out.println("The sum of the given numbers is " +sum);
@@ -111,7 +111,7 @@ public class LogicalOp {
             System.out.println();
         }
     }
-    public void averageIntervalNumbers(int no1, int no2) {
+    public float averageIntervalNumbers(int no1, int no2) {
         int sum = 0;
         float count = 0;
         for (int i = no1; i <= no2; i++) {
@@ -119,7 +119,7 @@ public class LogicalOp {
             count++;
         }
         float average = sum / count;
-        System.out.println(average);
+        return average;
     }
     public int countIntervalNumbers(int no1, int no2) {
         int sum = 0;

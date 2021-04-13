@@ -1,8 +1,8 @@
 package Lab2.AnimalRescue;
 
 public class Adopter {
-    private String name = "Jen";
-    private String type = "Girl";
+    private String name;
+    private String type;
     private float moneyInLei = 100f;
 
     public String getName(){

@@ -33,7 +33,6 @@ public class Main {
         op.countIntervalNumbers(3, 100);
 
         System.out.println("Exercitiul 8");
-
         op.averageIntervalNumbers(3, 100);
 
         System.out.println("Exercitiul 9");

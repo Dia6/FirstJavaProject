@@ -61,6 +61,13 @@ public class AppMain {
         System.out.println(cat.getFavFood());
         System.out.println(cat.getFavActivity());
 
+        //In proiectul AnimalRescue, folosind principiul polimorphismului, creati comportamente comune in clasele mai generale,
+        // iar pe urma suprascrieti-le in clasele care mostenesc acele clase generale.
+        //Spre exemplu, avem clasa Animal, care contine comportamente si atribute comune animalelor.
+        // Dog va extinde Animal, deci va mosteni toate atributele si comportamentele.
+        // Unele comportamente din Animal nu se potrivesc perfect si pentru Dog, si de aceea e necesar suprascrierea lor.
+        // Folosind principiul polimorfismului, suprascrieti metodele, pentru ca ele sa se potriveasca fiecarui obiect.
+
 
 
     }

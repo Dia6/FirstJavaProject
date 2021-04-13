@@ -17,36 +17,33 @@ public class Animal {
         System.out.println("Sleeping");
     }
     public void eat(){
-        System.out.println("eating");
+        System.out.println("Eating");
     }
     public void walk(){
         System.out.println("Walking");
+    }
+    public void speak(){
+        System.out.println("Speaking");
     }
 
     public float getWeight() {
         return weight;
     }
-
     public void setWeight(float weight) {
         this.weight = weight;
     }
-
     public float getHeight() {
         return height;
     }
-
     public void setHeight(float height) {
         this.height = height;
     }
-
-
     public String getColor() {
         return color;
     }
     public void setColor(String color) {
         this.color = color;
     }
-
     public String getFavActivity() {
         return favActivity;
     }
