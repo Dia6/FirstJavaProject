@@ -4,32 +4,31 @@ public class LogicalOp {
 
     public void CozaLozaWoza(int no1,int no2){
         int i = no1;
-        int count = 0;
-        for (i = no1; i <= no2; i++) {
+        while (i <= no2) {
             if (i % 3 == 0) {
-                System.out.println("Coza");
+                System.out.print(" Coza ");
             } else if (i % 5 == 0) {
-                System.out.println("Loza");
+                System.out.print(" Loza ");
             } else if (i % 7 == 0) {
-                System.out.println("Woza");
+                System.out.print(" Woza ");
             } else if (i % 3 == 0 && i % 5 == 0) {
-                System.out.println("CozaLoza");
+                System.out.print(" CozaLoza ");
             } else if (i % 3 == 0 && i % 7 == 0) {
-                System.out.println("CozaWoza");
+                System.out.print(" CozaWoza ");
             } else if (i % 5 == 0 && i % 7 == 0) {
-                System.out.println("WozaLoza");
+                System.out.print(" WozaLoza ");
             } else if (i % 3 == 0 && i % 5 == 0 && i % 7 == 0) {
-                System.out.println("CozaLozaWoza");
-            } else
-                System.out.println(i);
-            count++;
+                System.out.print(" CozaLozaWoza ");
+            } else {
+                System.out.print(i + " ");
+            }
+            if (i % 11 == 0) {
+                System.out.println();
+            }
+            i++;
         }
-        System.out.println("Total numere" + count);
     }
-<<<<<<<<< Temporary merge branch 1
-=========
 
->>>>>>>>> Temporary merge branch 2
     public void average7d(int no1, int no2){
         int i = no1;
         int sum = 0;

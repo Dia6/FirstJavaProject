@@ -4,10 +4,9 @@ public class AppMain {
     public static void main(String[] args) {
 
         Animal animal = new Animal();
-        System.out.println("My pet is a " + animal.getType());
         System.out.println("My dog is " + animal.getBreed());
         System.out.println("She is a girl and her name is " + animal.getName());
-        System.out.println("She is " + animal.getAgeInYears() + " years old");
+        System.out.println("She is " + animal.getAge() + " years old");
 
         Adopter adopter = new Adopter();
         System.out.println(adopter.getName());
