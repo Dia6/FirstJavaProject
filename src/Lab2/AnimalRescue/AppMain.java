@@ -30,24 +30,36 @@ public class AppMain {
         System.out.println("Tema Mostenirea in Java ");
 
         Dog dog = new Dog();
+        dog.setBreed("French Bulldog");
+        dog.setName("Masha");
+        dog.setAge(4);
+        dog.setFavFood("Salmon");
+        dog.setFavActivity("Play with kids");
+        dog.setHealth(10);
+        dog.setHunger(5);
         System.out.println(dog.getBreed());
         System.out.println(dog.getName());
         System.out.println(dog.getColor());
         System.out.println(dog.getAge());
         System.out.println(dog.getFavFood());
         System.out.println(dog.getFavActivity());
-        System.out.println(dog.getEat());
-        System.out.println(dog.getSleep());
 
 
         Cat cat = new Cat();
+        cat.setName("Kitty");
+        cat.setBreed("Birmanese");
+        cat.setAge(14);
+        cat.setColor("Beige");
+        cat.setFavActivity("Sleeping");
+        cat.setFavFood("Chips");
+        cat.setHealth(8);
+        cat.setHunger(7);
         System.out.println(cat.getName());
         System.out.println(cat.getBreed());
         System.out.println(cat.getAge());
         System.out.println(cat.getColor());
         System.out.println(cat.getFavFood());
         System.out.println(cat.getFavActivity());
-        System.out.println(cat.getSleep());
 
 
 

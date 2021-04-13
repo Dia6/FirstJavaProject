@@ -5,28 +5,40 @@ public class Animal {
     private String breed;
     private String name;
     private String color;
-    private float age;
+    private int age;
     private int health;
     private int hunger;
+    private float height;
+    private float weight;
     private String favFood;
     private String favActivity;
-    private String sleep;
-    private String eat;
 
-    public String getSleep(){
-        return sleep;
+    public void sleep(){
+        System.out.println("Sleeping");
     }
-    public void setSleep(String sleep){
-        this.sleep = sleep;
+    public void eat(){
+        System.out.println("eating");
     }
-
-    public String getEat() {
-        return eat;
+    public void walk(){
+        System.out.println("Walking");
     }
 
-    public void setEat(String eat) {
-        this.eat = eat;
+    public float getWeight() {
+        return weight;
     }
+
+    public void setWeight(float weight) {
+        this.weight = weight;
+    }
+
+    public float getHeight() {
+        return height;
+    }
+
+    public void setHeight(float height) {
+        this.height = height;
+    }
+
 
     public String getColor() {
         return color;
@@ -57,8 +69,8 @@ public class Animal {
     public float getAge() {
         return age;
     }
-    public void setAge(float ageInYears) {
-        this.age = ageInYears;
+    public void setAge(int age) {
+        this.age = age;
     }
     public String getBreed() {
         return breed;
