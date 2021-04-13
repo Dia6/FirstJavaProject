@@ -27,6 +27,28 @@ public class AppMain {
         System.out.println(vetDr.getDrName() + "  her to buy special grains for her new dog " +
                 "and she bought " + food.getName() + "grains");
 
+        System.out.println("Tema Mostenirea in Java ");
+
+        Dog dog = new Dog();
+        System.out.println(dog.getBreed());
+        System.out.println(dog.getName());
+        System.out.println(dog.getColor());
+        System.out.println(dog.getAge());
+        System.out.println(dog.getFavFood());
+        System.out.println(dog.getFavActivity());
+        System.out.println(dog.getEat());
+        System.out.println(dog.getSleep());
+
+
+        Cat cat = new Cat();
+        System.out.println(cat.getName());
+        System.out.println(cat.getBreed());
+        System.out.println(cat.getAge());
+        System.out.println(cat.getColor());
+        System.out.println(cat.getFavFood());
+        System.out.println(cat.getFavActivity());
+        System.out.println(cat.getSleep());
+
 
 
     }

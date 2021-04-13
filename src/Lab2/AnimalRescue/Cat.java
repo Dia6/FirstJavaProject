@@ -5,16 +5,16 @@ public class Cat extends Animal{
 
     Cat cat = new Cat();
 
-    cat.getName();
-    cat.getBreed();
-    cat.getAge();
-    cat.getColor();
-    cat.getFavActivity();
-    cat.getFavFood();
-    cat.eat();
-    cat.sleep();
-    cat.getHealth();
-    cat.getHunger();
+    cat.setName("Kitty");
+    cat.setBreed("Birmanese");
+    cat.setAge(14);
+    cat.setColor("Beige");
+    cat.setFavActivity("Sleeping");
+    cat.setFavFood("Chips");
+    cat.setEat("Yum yum");
+    cat.setSleep("Purr purr");
+    cat.setHealth(8);
+    cat.setHunger(7);
 
 
     }

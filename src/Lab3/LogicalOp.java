@@ -6,19 +6,19 @@ public class LogicalOp {
         int i = no1;
         while (i <= no2) {
             if (i % 3 == 0) {
-                System.out.print(" Coza ");
+                System.out.print("Coza ");
             } else if (i % 5 == 0) {
-                System.out.print(" Loza ");
+                System.out.print("Loza ");
             } else if (i % 7 == 0) {
-                System.out.print(" Woza ");
+                System.out.print("Woza ");
             } else if (i % 3 == 0 && i % 5 == 0) {
-                System.out.print(" CozaLoza ");
+                System.out.print("CozaLoza ");
             } else if (i % 3 == 0 && i % 7 == 0) {
-                System.out.print(" CozaWoza ");
+                System.out.print("CozaWoza ");
             } else if (i % 5 == 0 && i % 7 == 0) {
-                System.out.print(" WozaLoza ");
+                System.out.print("WozaLoza ");
             } else if (i % 3 == 0 && i % 5 == 0 && i % 7 == 0) {
-                System.out.print(" CozaLozaWoza ");
+                System.out.print("CozaLozaWoza ");
             } else {
                 System.out.print(i + " ");
             }
@@ -28,7 +28,6 @@ public class LogicalOp {
             i++;
         }
     }
-
     public void average7d(int no1, int no2){
         int i = no1;
         int sum = 0;
