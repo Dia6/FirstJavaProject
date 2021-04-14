@@ -1,7 +1,6 @@
 package Lab2;
 
 import Lab3.Calculator;
-import Lab3.LogicalOp;
 
 public class Main {
     public static void main( String[] args) {
@@ -26,7 +25,6 @@ public class Main {
         System.out.println("Rezultatele pentru Tema 2");
 
         Calculator calc = new Calculator();
-
         System.out.println("Rezultatul este " + calc.sum(3, 6));
         System.out.println("Rezultatul este " + calc.subtract(3, 6));
         System.out.println("Rezultatul este " + calc.multiply(3, 6));
@@ -71,7 +69,6 @@ public class Main {
         System.out.println("Viteza in metri pe secunda este: " + mps);
         System.out.println("Viteza in kilometri pe ora este: " + kmh);
         System.out.println("Viteza in mile pe ora este: " + mph);
-
 
 
     }

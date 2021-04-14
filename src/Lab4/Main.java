@@ -1,6 +1,5 @@
 package Lab4;
 
-import Lab3.Calculator;
 import Lab3.LogicalOp;
 
 public class Main {

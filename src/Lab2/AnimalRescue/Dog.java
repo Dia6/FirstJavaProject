@@ -10,6 +10,9 @@ public class Dog extends Animal{
     public void sleep(){
         System.out.println("Snore");
     }
+    public void setWeight(){
+
+    }
 
 
 }

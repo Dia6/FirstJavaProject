@@ -2,6 +2,54 @@ package Lab3;
 
 public class LogicalOp {
 
+
+
+    public void indexOfArray(int[]array){
+        int index = 0;
+        for (int i = 0; i < array.length; i++) {
+            index = i;
+            System.out.println(index);
+        }
+    }
+
+    public boolean isInArray(String[]array, String text){
+        for(int i = 0; i < array.length;i++) {
+            if (array[i].equals(text)) {
+                return true;
+            }
+        }return false;
+    }
+    public void printArray(int[]array){
+    for(int i = 1; i <= array.length; i++) {
+        System.out.println(i);
+    }
+    }
+    public void printArrayLines(String[]array) {
+        int j = 0;
+        for (int i = 0; i < array.length; i++) {
+            {
+                for (j = i; j <= 9; j++) {
+                    System.out.println(array[i]);
+                }
+            }
+        }
+    }
+    public float averageArray(int[]array) {
+        int sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            sum +=array[i];
+        }
+        float average = sum/array.length;
+        return average;
+    }
+    public int[] evenArray(int[]array){
+        for (int i = 1; i < array.length; i++)
+            if (i % 2 == 0){
+                System.out.println(i);
+            }
+        return array;
+    }
+
     public void CozaLozaWoza(int no1,int no2){
         int i = no1;
         while (i <= no2) {
@@ -272,4 +320,4 @@ public class LogicalOp {
             return second;
         }
     }
-}
+ }
