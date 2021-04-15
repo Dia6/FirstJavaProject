@@ -68,27 +68,30 @@ public class Main {
 
         System.out.println("Exercitiul 8");
 
-        int[] array7 = {6, 5, 3, 42, 5, 6};
+        int[] array7 = {6, 5, 3, 42, 8, 4};
         op.skipNoInArray(array7, 3);
 
-//        System.out.println("Exercitiul 9");
-//        //9. Creati o metoda care sa primeasca un array, si sa returneze al doilea cel mai mic numar din array.
-//        int[]array8 = {2, 3, 7, 4, 5, 6};
-//        int min = op.getArrayMinValue(array8);
-//        for (int i = 1; i <=array8.length; i++){
-//                if (array[i] < minValue) {
-//                    minValue = array[i];
-//
-//                }
-//            }
-//        }
+        System.out.println("Exercitiul 9");
+        int[] array8 = {3, 7, 11, 2, 6};
+        int min2 = 0;
+        for (int i = 0; i < array8.length; i++) {
+            for (int j = i + 1; j < array8.length; j++) {
+                if (array8[j] > array8[i]) {
+                    min2 = array8[i];
+                    array8[i] = array8[j];
+                    array8[j] = min2;
+
+                }
+
+            }
+
+        }System.out.println(min2);
+
 
         System.out.println("Exercitiul 10");
-
-        int[] array9 = {3,5,6,10,12};
+        int[] array9 = {3, 5, 6, 10, 12};
         int[] array10 = new int[array9.length];
         System.out.println("Valorile din noul array sunt ");
-        op.copyArrayValues(array9,array10);
+        op.copyArrayValues(array9, array10);
     }
-
 }

@@ -2,6 +2,7 @@ package Lab3;
 
 public class LogicalOp {
 
+
     public int[] copyArrayValues(int[] arr1, int[] arr2) {
         arr2 = arr1;
         for (int i = 0; i < arr1.length; i++) {
@@ -9,17 +10,25 @@ public class LogicalOp {
         }return arr2;
 
     }
-
-    public int getArrayMinValue(int[] array) {
-        int minValue = array[0];
+    public int secondSmallNo(int []array) {
+        int min = array[0];
+        int min2 = array[0];
         for (int i = 1; i < array.length; i++) {
-            if (array[i] < minValue) {
-                minValue = array[i];
+            if (array[i] < min) {
+                min = array[i];
+                min2 = array[i] - min;
+            }
+        }return min2;
+    }
+    public int smallNo(int[] array) {
+        int min = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] < min) {
+                min = array[i];
             }
         }
-        return minValue;
+        return min;
     }
-
     public int[] skipNoInArray(int[] array, int no1) {
         for (int i = 0; i < array.length; i++) {
             if (array[i] == no1) {
@@ -29,7 +38,6 @@ public class LogicalOp {
         }
         return array;
     }
-
     public int indexOfArray(int[] array) {
         int index = 0;
         for (int i = 0; i <= array.length; i++) {
@@ -37,7 +45,6 @@ public class LogicalOp {
         }
         return index;
     }
-
     public boolean isInArray(String[] array, String text) {
         for (int i = 0; i < array.length; i++) {
             if (array[i].equals(text)) {
@@ -46,7 +53,6 @@ public class LogicalOp {
         }
         return false;
     }
-
     public void isInArray(int[] array, int no) {
         int index = 0;
         for (int i = 0; i < array.length; i++) {
@@ -57,7 +63,6 @@ public class LogicalOp {
             }
         }
     }
-
     public void setArray(int[]array){
         for(int i = 1; i < array.length; i++) {
             System.out.println(i);
@@ -68,7 +73,6 @@ public class LogicalOp {
         System.out.println(array[i]);
     }
     }
-
     public void printArrayLines(String[]array) {
         int j = 0;
         for (int i = 0; i < array.length; i++) {
@@ -94,6 +98,7 @@ public class LogicalOp {
             }
         return array;
     }
+
 
     public void CozaLozaWoza(int no1,int no2){
         int i = no1;
@@ -194,6 +199,8 @@ public class LogicalOp {
             System.out.println(number++);
 
     }
+
+
     public void printPattern() {
         String p = "*";
         int a = 1;
@@ -316,6 +323,9 @@ public class LogicalOp {
                 System.out.println("The number is not in the list!");
         }
     }
+
+
+
     public String checkNumber(int number) {
         if ( number > 3 && number != 4) {
             return ("The number is greater than 3 and not equal to 4");
