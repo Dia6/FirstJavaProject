@@ -4,12 +4,20 @@ public class LogicalOp {
 
 
 
-    public void indexOfArray(int[]array){
+    public int[] skipNoInArray(int[]array, int no1){
+        for (int i = 0; i < array.length; i++){
+            if (array[i] == no1) {
+                continue;
+            }
+            System.out.println(array[i]);
+        }return array;
+    }
+    public int indexOfArray(int[]array){
         int index = 0;
         for (int i = 0; i < array.length; i++) {
             index = i;
-            System.out.println(index);
         }
+        return index;
     }
 
     public boolean isInArray(String[]array, String text){

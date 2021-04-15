@@ -53,15 +53,13 @@ public class Main {
         System.out.println(op.isInArray(array4, "soare"));
         System.out.println(op.isInArray(array4, "ploaie"));
 
-        //6. Creati o metoda care sa primeasca un parametru de tip array de numere, populat cu valori si un parametru de tip numar.
-        // Metoda sa verifice daca numarul primit se afla in array-ul primit,
-        // si daca da, atunci sa returneze pozitia pe care se afla numarul.  Apelati metoda in main() pentru a verifica daca functioneaza.
 
         System.out.println("Exercitiul 6");
         int[] array5 = {1, 2, 3, 4, 5, 6, 7, 8, 9};
         int no = 4;
-        op.indexOfArray(array5);
-        //mai departe m-am blocat
+        int index = op.indexOfArray(array5);
+
+
 
         System.out.println("Exercitiul 7");
 
@@ -70,20 +68,9 @@ public class Main {
 
         System.out.println("Exercitiul 8");
 
-        //8. Creati o metoda care sa primeasca un parametru de tip array de numere, populat cu valori, si un parametru de tip numar.
-        // Metoda sa verifice daca numarul exista in array, si daca da, sa returneze array-ul primit, fara acel numar.
-        // Apelati metoda in main() pentru a verifica daca functioneaza.
-
         int[] array7 = {1, 2, 3, 4, 5, 6};
-        int no2 = 3;
-        int i = 1;
+        op.skipNoInArray(array7, 3);
 
-        for (i = 1; i <= array7.length; i++){
-            System.out.println(i);
-
-            if (array7[i] == 3)
-                break;
-            }i++;
 
     }
 }
