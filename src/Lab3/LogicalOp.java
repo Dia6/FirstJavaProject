@@ -2,36 +2,73 @@ package Lab3;
 
 public class LogicalOp {
 
+    public int[] copyArrayValues(int[] arr1, int[] arr2) {
+        arr2 = arr1;
+        for (int i = 0; i < arr1.length; i++) {
+            System.out.println(arr2[i]);
+        }return arr2;
 
+    }
 
-    public int[] skipNoInArray(int[]array, int no1){
-        for (int i = 0; i < array.length; i++){
+    public int getArrayMinValue(int[] array) {
+        int minValue = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] < minValue) {
+                minValue = array[i];
+            }
+        }
+        return minValue;
+    }
+
+    public int[] skipNoInArray(int[] array, int no1) {
+        for (int i = 0; i < array.length; i++) {
             if (array[i] == no1) {
                 continue;
             }
             System.out.println(array[i]);
-        }return array;
+        }
+        return array;
     }
-    public int indexOfArray(int[]array){
+
+    public int indexOfArray(int[] array) {
         int index = 0;
-        for (int i = 0; i < array.length; i++) {
+        for (int i = 0; i <= array.length; i++) {
             index = i;
         }
         return index;
     }
 
-    public boolean isInArray(String[]array, String text){
-        for(int i = 0; i < array.length;i++) {
+    public boolean isInArray(String[] array, String text) {
+        for (int i = 0; i < array.length; i++) {
             if (array[i].equals(text)) {
                 return true;
             }
-        }return false;
+        }
+        return false;
+    }
+
+    public void isInArray(int[] array, int no) {
+        int index = 0;
+        for (int i = 0; i < array.length; i++) {
+            index = i - 1;
+            if (array[i] == (no)) {
+                index++;
+                System.out.println("Array index of entered number is " + index);
+            }
+        }
+    }
+
+    public void setArray(int[]array){
+        for(int i = 1; i < array.length; i++) {
+            System.out.println(i);
+        }
     }
     public void printArray(int[]array){
-    for(int i = 1; i <= array.length; i++) {
-        System.out.println(i);
+    for(int i = 0; i < array.length; i++) {
+        System.out.println(array[i]);
     }
     }
+
     public void printArrayLines(String[]array) {
         int j = 0;
         for (int i = 0; i < array.length; i++) {
@@ -47,7 +84,7 @@ public class LogicalOp {
         for (int i = 0; i < array.length; i++) {
             sum +=array[i];
         }
-        float average = sum/array.length;
+        float average = sum/(float)array.length;
         return average;
     }
     public int[] evenArray(int[]array){
@@ -321,6 +358,7 @@ public class LogicalOp {
             return second;
         }
     }
+
     public int checkHigherNumber(int first, int second) {
         if (first > second) {
             return first;

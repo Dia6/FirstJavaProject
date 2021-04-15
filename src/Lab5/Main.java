@@ -37,15 +37,16 @@ public class Main {
 
         System.out.println("Exercitiul 2");
         LogicalOp op = new LogicalOp();
-        int[] array = new int[100];
-        op.printArray(array);
+        int[] array1 = new int[100];
+        op.setArray(array1);
 
         System.out.println("Exercitiul 3");
         int[] array2 = new int[100];
         op.evenArray(array2);
 
         System.out.println("Exercitiul 4");
-        int[] array3 = {1, 2, 3, 4};
+        int[] array3 = {4, 5, 7, 9};
+        System.out.println(op.averageArray(array3));
 
 
         System.out.println("Exercitiul 5");
@@ -55,22 +56,39 @@ public class Main {
 
 
         System.out.println("Exercitiul 6");
-        int[] array5 = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-        int no = 4;
-        int index = op.indexOfArray(array5);
 
-
+        int[] array5 = {6, 8, 13, 5};
+        op.isInArray(array5, 13);
+        op.isInArray(array5, 11);
+        op.isInArray(array5, 6);
 
         System.out.println("Exercitiul 7");
-
         String[] array6 = {"- - - - - - - - - - "};
         op.printArrayLines(array6);
 
         System.out.println("Exercitiul 8");
 
-        int[] array7 = {1, 2, 3, 4, 5, 6};
+        int[] array7 = {6, 5, 3, 42, 5, 6};
         op.skipNoInArray(array7, 3);
 
+//        System.out.println("Exercitiul 9");
+//        //9. Creati o metoda care sa primeasca un array, si sa returneze al doilea cel mai mic numar din array.
+//        int[]array8 = {2, 3, 7, 4, 5, 6};
+//        int min = op.getArrayMinValue(array8);
+//        for (int i = 1; i <=array8.length; i++){
+//                if (array[i] < minValue) {
+//                    minValue = array[i];
+//
+//                }
+//            }
+//        }
 
+        System.out.println("Exercitiul 10");
+
+        int[] array9 = {3,5,6,10,12};
+        int[] array10 = new int[array9.length];
+        System.out.println("Valorile din noul array sunt ");
+        op.copyArrayValues(array9,array10);
     }
+
 }
