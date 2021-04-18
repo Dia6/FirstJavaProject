@@ -29,7 +29,7 @@ public class Main {
 
         System.out.println("Exercitiul 7");
 
-        op.countIntervalNumbers(3, 100);
+        op.sumIntervalNumbers(3, 100);
 
         System.out.println("Exercitiul 8");
         op.averageIntervalNumbers(3, 100);

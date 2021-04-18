@@ -3,6 +3,63 @@ package Lab3;
 public class LogicalOp {
 
 
+    public void findMinMax(int[]array){
+        int min = array[0];
+        int max = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] < min) {
+                min = array[i];
+            }else if (array[i] > max) {
+                max = array[i];
+            }
+        }System.out.println("Minimum value in array is " + min);
+        System.out.println("Maximum value in array is " + max);
+    }
+    public void duplicateStringValues(String []array1, String[] array2){
+        for (int i = 0; i< array1.length; i++)
+            for (int j = 0; j < array2.length; j++) {
+                if (array1[i].equals(array2[j]))
+                    System.out.println(array2[j]);
+            }
+    }
+    public void showDuplicate(String[]array){
+        for (int i = 0; i< array.length; i++) {
+            for (int j = i + 1; j < array.length; j++) {
+                if (array[i].equals(array[j]))
+                    System.out.println(array[j]);
+            }
+        }
+
+    }
+    public void showDuplicate(int[]array){
+        for (int i = 0; i< array.length; i++) {
+            for (int j = i + 1; j < array.length; j++) {
+                if (array[i] == array[j])
+                    System.out.println(array[j]);
+            }
+        }
+
+    }
+//    public int[] sortAscendArray(int [] array){
+//        for (int i = 0; i < array.length; i++) {
+//            for (int j = i + 1; j < array.length; j++) {
+//                int no = 0;
+//                if (array[i] > array[j]) {
+//                    no = array[i];
+//                    array[i] = array[j];
+//                    array[j] = no;
+//                }
+//            }System.out.println(array[i]);
+//
+//        }return array;
+//    }
+    public int[] insertElement(int[]array, int value,int index){
+        array[index] = value;
+        for (int i = 0; i < array.length; i++) {
+            index = i;
+        }return array;
+
+    }
     public int[] copyArrayValues(int[] arr1, int[] arr2) {
         arr2 = arr1;
         for (int i = 0; i < arr1.length; i++) {
@@ -10,17 +67,7 @@ public class LogicalOp {
         }return arr2;
 
     }
-    public int secondSmallNo(int []array) {
-        int min = array[0];
-        int min2 = array[0];
-        for (int i = 1; i < array.length; i++) {
-            if (array[i] < min) {
-                min = array[i];
-                min2 = array[i] - min;
-            }
-        }return min2;
-    }
-    public int smallNo(int[] array) {
+    public int minNumber(int[] array) {
         int min = array[0];
         for (int i = 1; i < array.length; i++) {
             if (array[i] < min) {
@@ -28,6 +75,15 @@ public class LogicalOp {
             }
         }
         return min;
+    }
+    public int maxNumber(int[] array) {
+        int max = array[0];
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] > max) {
+                max = array[i];
+            }
+        }
+        return max;
     }
     public int[] skipNoInArray(int[] array, int no1) {
         for (int i = 0; i < array.length; i++) {
@@ -64,14 +120,36 @@ public class LogicalOp {
         }
     }
     public void setArray(int[]array){
-        for(int i = 1; i < array.length; i++) {
-            System.out.println(i);
+        for(int i = 0; i < array.length; i++){
+            array[i] = i + 1;
+            System.out.println(array[i]);
         }
+
     }
+    public int[] evenArray(int[]array){
+        for (int i = 0; i < array.length; i++){
+            array[i] = i + 1;
+            if (array[i] % 2 == 0) {
+                System.out.println(array[i]);
+            }
+        }
+        return array;
+    }
+
     public void printArray(int[]array){
     for(int i = 0; i < array.length; i++) {
         System.out.println(array[i]);
     }
+    }
+    public void printReversedArray(String[]array){
+        for (int i = array.length-1; i >=0; i--){
+            System.out.println(array[i]);
+        }
+    }
+    public void printReversedArray(int[]array){
+        for (int i = array.length-1; i >=0; i--){
+            System.out.println(array[i]);
+        }
     }
     public void printArrayLines(String[]array) {
         int j = 0;
@@ -91,14 +169,6 @@ public class LogicalOp {
         float average = sum/(float)array.length;
         return average;
     }
-    public int[] evenArray(int[]array){
-        for (int i = 1; i < array.length; i++)
-            if (i % 2 == 0){
-                System.out.println(i);
-            }
-        return array;
-    }
-
 
     public void CozaLozaWoza(int no1,int no2){
         int i = no1;
@@ -221,7 +291,7 @@ public class LogicalOp {
         float average = sum / count;
         return average;
     }
-    public int countIntervalNumbers(int no1, int no2) {
+    public int sumIntervalNumbers(int no1, int no2) {
         int sum = 0;
         for (int i = no1; i <= no2; i++) {
             sum += i;
