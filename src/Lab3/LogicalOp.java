@@ -127,10 +127,12 @@ public class LogicalOp {
 
     }
     public int[] evenArray(int[]array){
-        for (int i = 0; i < array.length; i++){
-            array[i] = i + 1;
-            if (array[i] % 2 == 0) {
-                System.out.println(array[i]);
+        int j = 0;
+        for (int i = 1; i <= array.length; i++){
+            if (i % 2 == 0) {
+                array[j] = i;
+                j++;
+                System.out.println(array[j]);
             }
         }
         return array;
