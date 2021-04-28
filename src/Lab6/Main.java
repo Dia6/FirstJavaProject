@@ -100,24 +100,75 @@ public class Main {
 
 
         System.out.println("");
-        System.out.println("Exercitiul 7");
+        System.out.println("Exercitiul 8");
         //Scrieti o metoda Java care sa primeasca o Lista si sa returneze cel mai mare numar din ea.
-        List<Integer>list7 = new ArrayList<>();
-        list7.add(1);
-        list7.add(24);
-        list7.add(12);
-        list7.add(3);
-        list7.add(6);
-        list7.add(15);
+        List<Integer>list8 = new ArrayList<>();
+        list8.add(1);
+        list8.add(24);
+        list8.add(12);
+        list8.add(3);
+        list8.add(6);
+        list8.add(15);
 
-        System.out.println(op.maxValueOfList(list7));
-
-
+        System.out.println(op.maxValueOfList(list8));
 
 
+        System.out.println("");
+        System.out.println("Tema optionala Ex 1");
+        //Scrieti o metoda Java care sa schimbe pozitia a doua elemente intr-o Lista,
+        List<Integer>listEx1 = new ArrayList<>();
+        listEx1.add(2);
+        listEx1.add(5);
+        listEx1.add(4);
+        listEx1.add(8);
+        listEx1.add(7);
+        op.swapValues(listEx1,7,4);
+        System.out.println(listEx1);
+
+//        List<String>listEx1 = new ArrayList<>();
+//        listEx1.add("Masha");
+//        listEx1.add("mananca");
+//        listEx1.add("avocado");
+//        listEx1.add("in curte");
+//        listEx1.add("afara");
+//        System.out.println(op.swapValues(listEx1, 0, 3));
+
+//        public List<String> swapValues(List<String> list, int index1, int index2) {
+//            int smaller = op.checkSmallerNumber(index1, index2);
+//            int bigger = op1.checkBiggerNumber(index1, index2);
+//            list.add(smaller+1,list.get(smaller));
+//            list.set(smaller, list.get(bigger+1));
+//            list.set(bigger+1, list.get(smaller+1));
+//            list.remove(smaller+1);
+//            return list;
+//        }
+        //op.swapValuesByIndex(listEx1,0,1);
+//        System.out.println(listEx1);
 
 
+        System.out.println("");
+        System.out.println("Tema optionala Ex 2");
+        //Scrieti o metoda Java care sa primeasca o Lista si sa returneze o alta lista,
+        // care sa contina doar numerele pare din lista primita.
+        List<Integer>listEx2 = op.setListValues(100);
+        System.out.println(op.evenList(listEx2));
 
+
+        System.out.println("");
+        System.out.println("Tema optionala Ex 3");
+        //Scrieti o metoda Java care sa primeasca parametru o Lista nesortata, si sa returneze Lista sortata crescator.
+        // Atentie, sortarea sa se faca programatic(adica logica sa fie scrisa de voi),
+        // si nu folosit librarie externa, precum Collection.sort().
+        List<Integer>listEx3 = new ArrayList<>();
+        listEx3.add(32);
+        listEx3.add(2);
+        listEx3.add(3);
+        listEx3.add(14);
+        listEx3.add(21);
+        listEx3.add(6);
+        listEx3.add(11);
+
+        op.sortAscendList(listEx3);
 
 
     }

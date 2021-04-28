@@ -1,7 +1,6 @@
 package Lab5;
 
 import Lab3.Calculator;
-import Lab3.LogicalOp;
 
 import java.util.Arrays;
 
@@ -38,13 +37,13 @@ public class Main {
         System.out.println(calc.multiply(4, 7, 9));
 
 
-        System.out.println("");
+        System.out.println();
         System.out.println("Exercitiul 2");
         //2.  In clasa LogicalOp, creati o metoda care sa scrie pe un array de 100 de pozitii, valorile de la 1 la 100.
         // Sa se afiseze progresul in consola pe tot parcursul.
         LogicalOp op = new LogicalOp();
-        int[] array1 = new int[100];
-        op.setArray(array1);
+        int[] array2 = new int[100];
+        op.setArray(array2);
 
 
         System.out.println("");
@@ -52,48 +51,49 @@ public class Main {
         //3. Creati o metoda care primeasca un parametru de tip array de numere intregi gol, si sa il returneze populat cu toate valorile pare de la 1 la 100.
         // Atentie, metoda returneaza un array, deci acesta va trebui surprins si afisat folosind o bucla.
 
-        int[] array2 = new int[100];
-        op.evenArray(array2);
+        int[] array3 = new int[100];
+        op.setArray(array3);
+        op.evenArray(array3);
 
         System.out.println("");
         System.out.println("Exercitiul 4");
         //4. Creati o metoda care sa primeasca un parametru de tip array de numere, si sa fie populat cu valori.
         // Metoda sa calculeze si sa returneze media numerelor din array.
-        int[] array3 = {4, 5, 7, 9};
-        System.out.println(op.averageArray(array3));
+        int[] array4 = {4, 5, 7, 9};
+        System.out.println(op.averageArray(array4));
 
 
         System.out.println("");
         System.out.println("Exercitiul 5");
         //5. Creati o metoda care sa primeasca un parametru de tip array de string-uri, populat cu valori, si un parametru de tip String.
         // Metoda sa verifice daca valoarea string-ului primit se regaseste in array-ul primit, iar daca da sa returneze true iar daca nu, sa returneze false.
-        String[] array4 = {"Afara", "este", "soare"};
+        String[] array5 = {"Afara", "este", "soare"};
         String text = "soare";
         String text2 = "ploaie";
 
-        System.out.println(op.isInArray(array4, text));
-        System.out.println(op.isInArray(array4, text2));
+        System.out.println(op.isInArray(array5, text));
+        System.out.println(op.isInArray(array5, text2));
 
 
         System.out.println("");
         System.out.println("Exercitiul 6");
         //6. Creati o metoda care sa primeasca un parametru de tip array de numere, populat cu valori, si un parametru de tip numar.
         // Metoda sa verifice daca numarul primit se afla in array-ul primit,si daca da, atunci sa returneze pozitia pe care se afla numarul.
-        int[] array5 = {6, 8, 13, 5};
+        int[] array6 = {6, 8, 13, 5};
         int no4 = 6;
         int no5 = 11;
         int no6 = 13;
+        op.isInArray(array6,no4);
 
-        op.isInArray(array5, no4);
-        op.isInArray(array5, no5);
-        op.isInArray(array5, no6);
+        op.isInArray(array6, no5);
+        op.isInArray(array6, no6);
 
 
         System.out.println("");
         System.out.println("Exercitiul 7");
         //7. Creati o metoda care sa afiseze urmatoarea grila, folosind un array:
-        String[] array6 = {"- - - - - - - - - -"};
-        op.printArrayLines(array6);
+        String[] array7 = {"- - - - - - - - - -"};
+        op.printArrayLines(array7);
 
 
         System.out.println("");
@@ -107,35 +107,26 @@ public class Main {
         System.out.println("Exercitiul 8");
         //8. Creati o metoda care sa primeasca un parametru de tip array de numere, populat cu valori, si un parametru de tip numar.
         // Metoda sa verifice daca numarul exista in array, si daca da, sa returneze array-ul primit, fara acel numar.
-        int[] array7 = {6, 5, 3, 42, 8, 4};
+        int[] array8 = {6, 5, 3, 42, 8, 4};
         int no7 = 3;
-        op.skipNoInArray(array7, no7);
+        op.skipNoInArray(array8, no7);
 
 
         System.out.println("");
         System.out.println("Exercitiul 9");
         //9. Creati o metoda care sa primeasca un array, si sa returneze al doilea cel mai mic numar din array.
-//        int[] array8 = {3, 7, 11, 16, 6};
-//        int min  = op.minNumber(array8);
-//        Arrays.sort(array8);
-//        for (int i = 1; i < array.length; i++) {
-//            if (array[i] < min) {
-//                min = array[i];
-//                for (int j = min; j <= array.length; j++) {
-//                    System.out.println(array[j]);
-//                    min++;
-//                }
-//            }
-//        }return array;
-//
+        int[] array9 = {3, 7, 11, 16, 6};
+        System.out.println( op.secondSmallestNumber(array9));
+
+
         System.out.println("");
         System.out.println("Exercitiul 10");
         //10. Creati o metoda care sa primeasca doi parametrii: un array populat cu valori, si un array gol.
         // Metoda sa copieze toate valorile din primul array, parcurgandu-l, in cel de-al doilea.
-        int[] array9 = {3, 5, 9, 11, 6, 10, 12};
-        int[] array10 = new int[array9.length];
+        int[] array10 = {3, 5, 9, 11, 6, 10, 12};
+        int[] array11 = new int[array9.length];
         System.out.println("Valorile din noul array sunt ");
-        op.copyArrayValues(array9, array10);
+        op.copyArrayValues(array10, array11);
 
         System.out.println("");
         System.out.println("Tema Arrays optionala - Exercitiul 1");
@@ -175,11 +166,13 @@ public class Main {
         op.duplicateStringValues(arr5, arr6);
 
 
-//        System.out.println("");
-//        System.out.println("Tema Arrays optionala - Exercitiul 6");
-//        //6. Creati o metoda care sa primeasca un array de numere ne-ordonat, si sa il returneze ordonat crescator.
-//
-//        int[] arr7 = {7, 89, 21, 4, 123, 72, 6, 14};
+        System.out.println("");
+        System.out.println("Tema Arrays optionala - Exercitiul 6");
+        //6. Creati o metoda care sa primeasca un array de numere ne-ordonat, si sa il returneze ordonat crescator.
+
+        int[] arr7 = {7, 89, 21, 4, 123, 72, 6, 14};
+        op.sortAscendingArray(arr7);
+
 
     }
 }
