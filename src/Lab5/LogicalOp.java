@@ -70,7 +70,6 @@ public class LogicalOp {
         for (int i = 0; i < array.length; i++) {
             index = i;
         }return array;
-
     }
     public int[] copyArrayValues(int[] arr1, int[] arr2) {
         arr2 = arr1;
@@ -121,7 +120,7 @@ public class LogicalOp {
         }
         return false;
     }
-    public void isInArray(int[] array, int no) {
+    public void indexOfValue(int[] array, int no) {
         int index = 0;
         for (int i = 0; i < array.length; i++) {
             index = i - 1;
@@ -135,7 +134,6 @@ public class LogicalOp {
         for(int i = 0; i < array.length; i++){
             array[i] = i + 1;
         }
-
     }
     public int[] evenArray(int[]evenArray){
         for (int i = 0; i < evenArray.length; i++){
@@ -145,7 +143,6 @@ public class LogicalOp {
         }
         return evenArray;
     }
-
     public void printArray(int[]array){
         for(int i = 0; i < array.length; i++) {
             System.out.println(array[i]);

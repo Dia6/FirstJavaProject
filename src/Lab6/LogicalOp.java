@@ -23,7 +23,6 @@ public class LogicalOp {
 //            }
 //        }return list;
 //    }
-
     public List<Integer> swapValues(List<Integer> list, int value1, int value2 ) {
         for (int i = 0; i < list.size(); i++) {
             if (value1 == list.get(i) ) {
@@ -35,7 +34,6 @@ public class LogicalOp {
             }
         }return list;
     }
-
     public List<Integer>sortAscendList(List<Integer>list){
         int temp = 0;
         for (int i = 0; i < list.size(); i++) {
@@ -49,8 +47,6 @@ public class LogicalOp {
             System.out.println(list.get(i));
         }return list;
     }
-
-
     public List<Integer>evenList(List<Integer>listA){
         List<Integer>evenList = new ArrayList<>();
         for(int i = 1; i <listA.size();i++){
@@ -74,30 +70,23 @@ public class LogicalOp {
             }
         }return max;
     }
-
     public void showIndexOfValue(List<String> list) {
         for (int i = 0; i < list.size(); i++) {
             System.out.println("For index " +i + " value is " + list.get(i));
         }
     }
-
     public void addValueToTopList(List<Integer> list, int value){
         list.add(0,value);
-
     }
     public void addValueToList(List<String> list, int value, String text){
        list.add(value, text);
-
-
     }
     public void printListFromValue(List<Integer> list, int value){
         for(int i = value; i<list.size(); i++){
             System.out.println(list.get(i));
         }
-
     }public void addValueToList(List<Integer> list, int value){
         list.add(value);
-
     }
     public void printReversedList(List<Integer> list){
         for(int i = list.size()-1; i >=0; i--){
@@ -109,5 +98,4 @@ public class LogicalOp {
             System.out.println(list.get(i));
         }
     }
-
 }

@@ -53,6 +53,6 @@ public class FrenchBulldog extends Dog{
 
     @Override
     public void Height() {
-        System.out.println("Height is 0,45 cm");
+        System.out.println("Height is 45 cm");
     }
 }

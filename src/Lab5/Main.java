@@ -83,11 +83,9 @@ public class Main {
         int no4 = 6;
         int no5 = 11;
         int no6 = 13;
-        op.isInArray(array6,no4);
-
-        op.isInArray(array6, no5);
-        op.isInArray(array6, no6);
-
+        op.indexOfValue(array6, no4);
+        op.indexOfValue(array6, no5);
+        op.indexOfValue(array6, no6);
 
         System.out.println("");
         System.out.println("Exercitiul 7");
@@ -172,6 +170,8 @@ public class Main {
 
         int[] arr7 = {7, 89, 21, 4, 123, 72, 6, 14};
         op.sortAscendingArray(arr7);
+
+
 
 
     }
